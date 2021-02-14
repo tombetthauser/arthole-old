@@ -1,5 +1,5 @@
 import './Home.css';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -16,14 +16,14 @@ function Home() {
           <li>find art</li>
         </ul>
         <ul className="intro-text__medium-list">
-          <li>funded by nothing</li>
+          <li>funded by poor people</li>
           <li>no ads / no bots / no narcs</li>
-          <li>built for nobody by nobody</li>
+          <li>built for nobody by idiots</li>
         </ul>
         <ul className="intro-text__links">
-          <li>login</li>
-          <li>signup</li>
-          <li>trydemo</li>
+          <li><Link className="intro-text__link" to={`/login`}>login</Link></li>
+          <li><Link className="intro-text__link" to={`/signup`}>signup</Link></li>
+          <li><Link className="intro-text__link" to={`/trydemo`}>trydemo</Link></li>
           {/* <li>moreinfo</li> */}
         </ul>
       </div>
