@@ -1,4 +1,4 @@
-.wrapper-div {
+.wrapper {
   width: 500px;
   display: block;
   margin: 50px auto;
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 850px) {
- .wrapper-div {
+ .wrapper {
     border-left: none;
     border-right: none;
   } 

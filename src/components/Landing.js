@@ -1,7 +1,7 @@
-import './Home.css';
+import './css/Landing.css';
 import { Link } from "react-router-dom";
 
-function Home() {
+function Landing() {
   return (
     <div className="Home">
       <div className="navbar">
@@ -24,11 +24,10 @@ function Home() {
           <li><Link className="intro-text__link" to={`/login`}>login</Link></li>
           <li><Link className="intro-text__link" to={`/signup`}>signup</Link></li>
           <li><Link className="intro-text__link" to={`/trydemo`}>trydemo</Link></li>
-          {/* <li>moreinfo</li> */}
         </ul>
       </div>
     </div>
   );
 }
 
-export default Home;
+export default Landing;
