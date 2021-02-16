@@ -8,7 +8,7 @@
   min-height: 80vh;
 }
 
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
  .wrapper-div {
     border-left: none;
     border-right: none;
