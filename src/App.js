@@ -6,7 +6,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/arthole">
         <div className="wrapper-div">
           <Switch>
             <Route path="/" exact component={Home} />
