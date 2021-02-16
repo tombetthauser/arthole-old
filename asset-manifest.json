@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/arthole/static/css/main.d666817f.chunk.css",
-    "main.js": "/arthole/static/js/main.61f46427.chunk.js",
-    "main.js.map": "/arthole/static/js/main.61f46427.chunk.js.map",
+    "main.css": "/arthole/static/css/main.bcd9d47b.chunk.css",
+    "main.js": "/arthole/static/js/main.14268b04.chunk.js",
+    "main.js.map": "/arthole/static/js/main.14268b04.chunk.js.map",
     "runtime-main.js": "/arthole/static/js/runtime-main.bf96d876.js",
     "runtime-main.js.map": "/arthole/static/js/runtime-main.bf96d876.js.map",
     "static/js/2.7c3cc4a4.chunk.js": "/arthole/static/js/2.7c3cc4a4.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.e2dc18c3.chunk.js": "/arthole/static/js/3.e2dc18c3.chunk.js",
     "static/js/3.e2dc18c3.chunk.js.map": "/arthole/static/js/3.e2dc18c3.chunk.js.map",
     "index.html": "/arthole/index.html",
-    "static/css/main.d666817f.chunk.css.map": "/arthole/static/css/main.d666817f.chunk.css.map",
+    "static/css/main.bcd9d47b.chunk.css.map": "/arthole/static/css/main.bcd9d47b.chunk.css.map",
     "static/js/2.7c3cc4a4.chunk.js.LICENSE.txt": "/arthole/static/js/2.7c3cc4a4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bf96d876.js",
     "static/js/2.7c3cc4a4.chunk.js",
-    "static/css/main.d666817f.chunk.css",
-    "static/js/main.61f46427.chunk.js"
+    "static/css/main.bcd9d47b.chunk.css",
+    "static/js/main.14268b04.chunk.js"
   ]
 }
