@@ -16,9 +16,9 @@ function Landing() {
           <li>find art</li>
         </ul>
         <ul className="intro-text__medium-list">
-          <li>funded by poor people</li>
+          <li>funded by nobody</li>
           <li>no ads / no bots / no narcs</li>
-          <li>built for nobody by idiots</li>
+          <li>built for idiots by poor people</li>
         </ul>
         <ul className="intro-text__links">
           <li><Link className="intro-text__link" to={`/login`}>login</Link></li>
