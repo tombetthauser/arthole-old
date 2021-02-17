@@ -1,11 +1,15 @@
 import './css/Landing.css';
+import Links from './Links.js'
 import { Link } from "react-router-dom";
 
 function Landing() {
   return (
     <div className="Home">
       <div className="navbar">
-        <h1 className="navbar__h1">ARTHOLE</h1>
+        <h1 className="navbar__h1">
+          ARTHOLE
+          {/* <span className="oshape-span"></span>LE */}
+          </h1>
       </div>
       <div className="intro-text">
         <ul className="intro-text__large-list">
@@ -21,9 +25,10 @@ function Landing() {
           <li>built for idiots by poor people</li>
         </ul>
         <ul className="intro-text__links">
-          <li><Link className="intro-text__link" to={`/login`}>login</Link></li>
-          <li><Link className="intro-text__link" to={`/signup`}>signup</Link></li>
-          <li><Link className="intro-text__link" to={`/trydemo`}>trydemo</Link></li>
+          <Links />
+          {/* <li><Link className="intro-text__link" to={`/login`}>login</Link></li> */}
+          {/* <li><Link className="intro-text__link" to={`/signup`}>signup</Link></li> */}
+          {/* <li><Link className="intro-text__link" to={`/trydemo`}>trydemo</Link></li> */}
         </ul>
       </div>
     </div>
