@@ -1,5 +1,6 @@
 import './css/Demo.css';
 import Links from '../components/Links.js';
+import React, { useEffect } from 'react';
 
 const demoSet = [
   "https://contemporaryartgroup.s3.amazonaws.com/wp-content/uploads/2021/02/xlarge-4eb77b6772a9e86d24053dfd15204fea-2048x1517.jpg",
@@ -77,47 +78,69 @@ const demoSet = [
   "https://contemporaryartgroup.s3.amazonaws.com/wp-content/uploads/2019/12/06-700x506.jpg",
 ]
 
-
-// for (var i = 0; i < arguments.length; i++) {
-//   images[i] = new Image();
-//   images[i].src = preload.arguments[i];
-// }
-
-
 const Demo = () => {
   let imageIdx = Math.floor(Math.random() * demoSet.length);
 
   const images = [];
-  demoSet.forEach(url => {
-    const newImg = new Image();
-    newImg.src = url;
-    images.push(newImg);
-  })
+  let img = null;
+  let imgWrapper = null;
 
-  const blurOut = () => {
-    document.querySelector(".demo-img").classList.add("blur-out");
+  const next = () => {
+    img.style.opacity = 0;
+
     setTimeout(() => {
-      // document.querySelector(".demo-img").src = "";
       imageIdx = (imageIdx + 3) % demoSet.length;
-      document.querySelector(".demo-img").src = demoSet[imageIdx];
-      document.querySelector(".image-wrapper").height = document.querySelector(".demo-img").height
-      console.log(document.querySelector(".demo-img").height);
+      img.src = demoSet[imageIdx];
+      document.querySelector(".test").style.height = `${img.height}px`
     }, 750);
-    setTimeout(() => {
-      document.querySelector(".demo-img").classList.remove("blur-out");
-    }, 1150);
+
+    setTimeout(() => { img.style.opacity = 1 }, 1150);
   }
+  
+  useEffect(() => {    // Update the document title using the browser API
+    img = document.querySelector(".demo-img");
+    imgWrapper = document.querySelector(".test");
+    
+    const newImg = new Image();
+    newImg.src = demoSet[imageIdx];
+    images.push(newImg);
+
+    demoSet.forEach(url => {
+      const newImg = new Image();
+      newImg.src = url;
+      images.push(newImg);
+    })
+
+    img.style.opacity = 0;
+
+    setTimeout(() => {
+      console.log(img.height)
+      img.src = demoSet[imageIdx];
+      if (img.height) imgWrapper.style.height = `${img.height}px`
+    }, 1250);
+    
+    setTimeout(() => { 
+      console.log(img.height)
+      img.style.opacity = 1 
+      if (img.height) imgWrapper.style.height = `${img.height}px`
+    }, 1750);
+  
+    setTimeout(() => { 
+      console.log(img.height)
+      if (img.height) imgWrapper.style.height = `${img.height}px`
+    }, 2250);
+  });
 
   return (
     <div>
       <h1 className="demo-h1">ARTHOLE</h1>
       <div className="demo-wrapper">
-        <div className="image-wrapper">
-        <img className="demo-img" src={ demoSet[imageIdx] }/>
+        <div className="test">
+          <img className="demo-img"/>
         </div>
         <br />
-        <button className="demo-form__submit" type="submit" onClick={blurOut}>No</button>
-        <button className="demo-form__submit" type="submit" onClick={blurOut}>Yes</button>
+        <button className="demo-form__submit" type="submit" onClick={next}>No</button>
+        <button className="demo-form__submit" type="submit" onClick={next}>Yes</button>
       </div>
       <Links />
     </div>

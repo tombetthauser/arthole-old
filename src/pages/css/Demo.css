@@ -13,7 +13,7 @@ body {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   margin: 30px auto;
-  padding: 15px 0px 50px;
+  padding: 0px 0px 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -66,18 +66,12 @@ body {
   transition: .75s;
 }
 
-.blur-out {
-  opacity: 0;
-  filter: blur(10px);
+.test {
+  height: 250px;
+  transition: 1s;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-
-.image-wrapper {
-  height: auto;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  transition: .2s;
-}
-
-/* .demo-wrapper:hover {
-  height: 1000px;
-} */

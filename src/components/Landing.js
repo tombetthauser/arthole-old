@@ -28,6 +28,7 @@ function Landing() {
           <Links />
         </ul>
       </div>
+
     </div>
   );
 }
