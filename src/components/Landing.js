@@ -26,9 +26,6 @@ function Landing() {
         </ul>
         <ul className="intro-text__links">
           <Links />
-          {/* <li><Link className="intro-text__link" to={`/login`}>login</Link></li> */}
-          {/* <li><Link className="intro-text__link" to={`/signup`}>signup</Link></li> */}
-          {/* <li><Link className="intro-text__link" to={`/trydemo`}>trydemo</Link></li> */}
         </ul>
       </div>
     </div>
