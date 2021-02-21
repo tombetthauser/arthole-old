@@ -1,4 +1,5 @@
 import './css/Demo.css';
+import Header from '../components/Header.js'
 import Links from '../components/Links.js';
 import React, { useEffect } from 'react';
 
@@ -133,7 +134,8 @@ const Demo = () => {
 
   return (
     <div>
-      <h1 className="demo-h1">ARTHOLE</h1>
+      {/* <h1 className="demo-h1">ARTHOLE</h1> */}
+      <Header />
       <div className="demo-wrapper">
         <div className="test">
           <img className="demo-img"/>
