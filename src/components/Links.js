@@ -1,10 +1,19 @@
 import './css/Links.css';
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import React, { useEffect } from 'react';
+
 
 function Links() {
   const location = useLocation().pathname;
   console.log(location)
+
+  useEffect(() => {
+    if (location === "/demo") {
+      const links = document.querySelectorAll(".intro-text__link");
+      links.forEach(link => { link.style.fontSize = "18px" });
+    }
+  })
 
   return (
     <div className="intro-text">
@@ -12,15 +21,15 @@ function Links() {
         <li>
           {
             location === "/login"
-              ? <Link to={`/login`} className="intro-text__link disabled-link" onClick={e => e.preventDefault()}>login</Link>
-              : <Link to={`/login`} className="intro-text__link">login</Link>
+              ? <Link to={`/login`} className="intro-text__link disabled-link" onClick={e => e.preventDefault()}>&gt; login</Link>
+              : <Link to={`/login`} className="intro-text__link">&gt; login</Link>
           }
         </li>
         <li>
           {
             location === "/signup"
-              ? <Link to={`/signup`} className="intro-text__link disabled-link" onClick={e => e.preventDefault()}>signup</Link>
-              : <Link to={`/signup`} className="intro-text__link">signup</Link>
+              ? <Link to={`/signup`} className="intro-text__link disabled-link" onClick={e => e.preventDefault()}>&gt; signup</Link>
+              : <Link to={`/signup`} className="intro-text__link">&gt; signup</Link>
           }
         </li>
         {/* {
@@ -31,8 +40,8 @@ function Links() {
         <li>
           {
             location === "/demo"
-              ? <Link to={`/demo`} className="intro-text__link disabled-link" onClick={e => e.preventDefault()}>trydemo</Link>
-              : <Link to={`/demo`} className="intro-text__link">trydemo</Link>
+              ? <Link to={`/demo`} className="intro-text__link disabled-link" onClick={e => e.preventDefault()}>&gt; art</Link>
+              : <Link to={`/demo`} className="intro-text__link">&gt; art</Link>
           }
         </li>
       </ul>

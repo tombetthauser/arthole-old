@@ -11,10 +11,7 @@
   border-bottom: 1px solid black;
   margin: 30px auto;
   padding: 15px 0px 50px;
-  /* padding: 0 35px; */
 }
-
-.login-form {}
 
 .login-form_label {
   display: block;
