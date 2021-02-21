@@ -60,3 +60,9 @@
 .login-form__submit:hover {
   cursor: pointer;
 }
+
+.signup-text {
+  white-space: normal;
+  font-size: 18px;
+  margin-bottom: 35px;
+}

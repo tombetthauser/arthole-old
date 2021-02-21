@@ -1,7 +1,10 @@
 import './css/Header.css';
 import React, { useEffect } from 'react';
+import { useHistory } from 'react-router-dom'
 
 const Header = () => {
+  const history = useHistory();
+
   let dropdown = null;
   const toggleDropdown = () => {
     dropdown.classList.toggle("dropdown--hidden");
@@ -11,18 +14,18 @@ const Header = () => {
     dropdown = document.querySelector(".dropdown");
   })
 
-
   return (
     <div>
-      <h1 className="header-h1">ARTHOLE
+      <h1 className="header-h1">
+        <span onClick={() => { history.push(`/`) }}>ARTHOLE</span>
         <span onClick={toggleDropdown} className="navburger-span"><div></div></span>
       </h1>
       <div className="dropdown dropdown--hidden">
-        <a href="/" className="dropdown_link">home</a>
-        <a href="/" className="dropdown_link">messages</a>
-        <a href="/" className="dropdown_link">applicants</a>
-        <a href="/" className="dropdown_link">settings</a>
-        <a href="/" className="dropdown_link">logout</a>
+        <a className="dropdown_link">&gt; home</a>
+        <a className="dropdown_link">&gt; messages</a>
+        <a className="dropdown_link">&gt; applicants</a>
+        <a className="dropdown_link">&gt; settings</a>
+        <a className="dropdown_link">&gt; logout</a>
       </div>
     </div>
   )

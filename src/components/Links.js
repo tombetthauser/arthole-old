@@ -23,11 +23,11 @@ function Links() {
               : <Link to={`/signup`} className="intro-text__link">signup</Link>
           }
         </li>
-        {
+        {/* {
           location === "/" 
             ? null 
             : <li><Link to={`/`} className="intro-text__link">back</Link></li>
-        }
+        } */}
         <li>
           {
             location === "/demo"
