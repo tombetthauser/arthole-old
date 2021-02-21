@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/arthole/static/css/main.3ca608d8.chunk.css",
-    "main.js": "/arthole/static/js/main.8c6bbc17.chunk.js",
-    "main.js.map": "/arthole/static/js/main.8c6bbc17.chunk.js.map",
+    "main.css": "/arthole/static/css/main.b47c96fc.chunk.css",
+    "main.js": "/arthole/static/js/main.21c10bf4.chunk.js",
+    "main.js.map": "/arthole/static/js/main.21c10bf4.chunk.js.map",
     "runtime-main.js": "/arthole/static/js/runtime-main.954512c7.js",
     "runtime-main.js.map": "/arthole/static/js/runtime-main.954512c7.js.map",
-    "static/js/2.50c9215a.chunk.js": "/arthole/static/js/2.50c9215a.chunk.js",
-    "static/js/2.50c9215a.chunk.js.map": "/arthole/static/js/2.50c9215a.chunk.js.map",
+    "static/js/2.4859ae77.chunk.js": "/arthole/static/js/2.4859ae77.chunk.js",
+    "static/js/2.4859ae77.chunk.js.map": "/arthole/static/js/2.4859ae77.chunk.js.map",
     "static/js/3.ac49bcea.chunk.js": "/arthole/static/js/3.ac49bcea.chunk.js",
     "static/js/3.ac49bcea.chunk.js.map": "/arthole/static/js/3.ac49bcea.chunk.js.map",
     "index.html": "/arthole/index.html",
-    "static/css/main.3ca608d8.chunk.css.map": "/arthole/static/css/main.3ca608d8.chunk.css.map",
-    "static/js/2.50c9215a.chunk.js.LICENSE.txt": "/arthole/static/js/2.50c9215a.chunk.js.LICENSE.txt"
+    "static/css/main.b47c96fc.chunk.css.map": "/arthole/static/css/main.b47c96fc.chunk.css.map",
+    "static/js/2.4859ae77.chunk.js.LICENSE.txt": "/arthole/static/js/2.4859ae77.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.954512c7.js",
-    "static/js/2.50c9215a.chunk.js",
-    "static/css/main.3ca608d8.chunk.css",
-    "static/js/main.8c6bbc17.chunk.js"
+    "static/js/2.4859ae77.chunk.js",
+    "static/css/main.b47c96fc.chunk.css",
+    "static/js/main.21c10bf4.chunk.js"
   ]
 }
